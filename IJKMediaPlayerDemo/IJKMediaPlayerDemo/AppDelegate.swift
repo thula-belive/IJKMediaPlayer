@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import IJKMediaFramework
+//import IJKMediaFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,13 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-#if DEBUG
-        IJKFFMoviePlayerController.setLogReport(true)
-        IJKFFMoviePlayerController.setLogLevel(k_IJK_LOG_DEBUG)
-#else
-        IJKFFMoviePlayerController.setLogReport(false)
-        IJKFFMoviePlayerController.setLogLevel(k_IJK_LOG_INFO)
-#endif
+//#if DEBUG
+//        IJKFFMoviePlayerController.setLogReport(true)
+//        IJKFFMoviePlayerController.setLogLevel(k_IJK_LOG_DEBUG)
+//#else
+//        IJKFFMoviePlayerController.setLogReport(false)
+//        IJKFFMoviePlayerController.setLogLevel(k_IJK_LOG_INFO)
+//#endif
 
         return true
     }

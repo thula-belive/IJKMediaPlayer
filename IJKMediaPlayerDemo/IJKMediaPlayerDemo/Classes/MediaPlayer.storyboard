@@ -51,23 +51,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8J-Tu-UmJ">
-                                <rect key="frame" x="192" y="377" width="30" height="30"/>
+                                <rect key="frame" x="176.5" y="377" width="61" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Play"/>
+                                <state key="normal" title="Play KSY"/>
                                 <connections>
                                     <action selector="playButtonTappedWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xye-WO-6C3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugq-Ur-pIN">
+                                <rect key="frame" x="180" y="433" width="54" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Play IJK"/>
+                                <connections>
+                                    <action selector="playIJKButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BiV-zT-caK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Ugq-Ur-pIN" firstAttribute="top" secondItem="d8J-Tu-UmJ" secondAttribute="bottom" constant="26" id="4K8-DW-aRg"/>
                             <constraint firstItem="d8J-Tu-UmJ" firstAttribute="top" secondItem="RA2-7q-yOm" secondAttribute="bottom" constant="18" id="NBU-Bi-iCZ"/>
                             <constraint firstItem="cEF-52-CIN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="RYv-G6-pfO"/>
                             <constraint firstItem="RA2-7q-yOm" firstAttribute="top" secondItem="cEF-52-CIN" secondAttribute="bottom" constant="20" id="Z9a-3G-nPD"/>
                             <constraint firstItem="d8J-Tu-UmJ" firstAttribute="centerX" secondItem="RA2-7q-yOm" secondAttribute="centerX" id="ZM5-tU-adA"/>
                             <constraint firstItem="cEF-52-CIN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="dXa-EU-LjH"/>
                             <constraint firstItem="RA2-7q-yOm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gCJ-bf-aYw"/>
+                            <constraint firstItem="Ugq-Ur-pIN" firstAttribute="centerX" secondItem="d8J-Tu-UmJ" secondAttribute="centerX" id="oCU-79-t2Z"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RA2-7q-yOm" secondAttribute="trailing" constant="20" id="w7n-Ml-ynT"/>
                         </constraints>
                     </view>
